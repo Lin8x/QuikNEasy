@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import enq_logo from "./assets/enq_logo.png";
+import salad from "./assets/salad.png";
 import Navbar from "./components/Navbar";
 import Home from "./components/Homepage";
 import Homepage from "./components/Homepage";
@@ -16,7 +17,14 @@ function App() {
   <div className="Content">
       <Homepage />
       <div>
-        
+        <a href="salad.png" target="_blank">
+          <img
+            src={salad}
+            style={{ height: "400px" , width: "auto"  }}
+            className="logo"
+            alt="QuikNEasySalad"
+          />
+        </a>
         {/* <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a> */}
