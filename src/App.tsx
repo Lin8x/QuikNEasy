@@ -10,13 +10,15 @@ function App() {
   const title = "QuikNEasy";
   return (
     <>
+    <div className="relative min-h-screen">
+
       <Navbar />
-      <div>
+      <div className="absolute top-4 left-4">
         <a href="enq_logo.png" target="_blank">
           <img
             src={enq_logo}
             width={200}
-            style={{ height: "200px" }}
+            style={{ height: "100px", width: "auto" }}
             className="logo"
             alt="QuikNEasyLogo"
           />
@@ -25,7 +27,10 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a> */}
       </div>
-      <h1>{title}</h1>
+      <div className="flex justify-center items-center min-h-screen">
+          <h1>{title}</h1>
+      </div>
+      
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           Plan your meal now!
@@ -37,6 +42,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+    </div>
     </>
   );
 }
