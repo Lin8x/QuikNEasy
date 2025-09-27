@@ -5,7 +5,7 @@ const Navbar = () => {
     <a href="enq_logo.png" target="_blank">
           <img
             src={enq_logo}
-            style={{ height: "100px" , width: "auto"  }}
+            style={{ height: "40px" , width: "auto"  }}
             className="logo"
             alt="QuikNEasyLogo"
           />

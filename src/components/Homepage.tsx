@@ -2,7 +2,7 @@ const Homepage = () => {
     return ( 
 
         <div className="home">
-            <h2>Welcome to QuikNEasy!</h2>
+            <h2 style={{ fontSize: "54px", fontWeight: "bold" }}>Quik-N-Easy</h2>
         </div>
 
      );
