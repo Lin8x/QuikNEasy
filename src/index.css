@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: #ffffffde;
-  background-color: #252525;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,7 +31,7 @@ body {
 .navbar{
   padding: 20px;
   display: flex;
-  background-color: #ffffff;
+  background-color: #252525;
   align-items: center;
   width: 100vw;
   border-bottom: 2px solid black;
