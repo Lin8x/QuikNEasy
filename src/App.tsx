@@ -2,6 +2,9 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import enq_logo from "./assets/enq_logo.png";
+import protein from "./assets/protein.png";
+import fat from "./assets/fat.png";
+import carbs from "./assets/carbs.png";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -15,10 +18,33 @@ function App() {
         <a href="enq_logo.png" target="_blank">
           <img
             src={enq_logo}
-            width={200}
-            style={{ height: "200px" }}
+            style={{ height: "100px" , width: "auto"  }}
             className="logo"
             alt="QuikNEasyLogo"
+          />
+        </a>
+        <a href="protein.png" target="_blank">
+          <img
+            src={protein}
+            style={{ height: "80px" , width: "auto" }}
+            className="logo"
+            alt="QuikNEasyProtein"
+          />
+        </a>
+        <a href="fat.png" target="_blank">
+          <img
+            src={fat}
+            style={{ height: "80px" , width: "auto" }}
+            className="logo"
+            alt="QuikNEasyFat"
+          />
+        </a>
+        <a href="carbs.png" target="_blank">
+          <img
+            src={carbs}
+            style={{ height: "80px" , width: "auto" }}
+            className="logo"
+            alt="QuikNEasyCarbs"
           />
         </a>
         {/* <a href="https://react.dev" target="_blank">
