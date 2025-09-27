@@ -13,10 +13,13 @@ function App() {
   return (
     <>
 <div className="App">
+  <div className="text-9xl text-amber-300">
+    dfgdfjdfkjfdjk
+  </div>
   <Navbar />
   <div className="Content">
       <Homepage />
-      <div>
+      <div className="flex">
         <a href="salad.png" target="_blank">
           <img
             src={salad}

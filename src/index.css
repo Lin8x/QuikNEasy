@@ -1,3 +1,4 @@
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,7 +23,7 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+/* body {
   margin: 0;
   display: flex;
   place-items: center;
@@ -33,7 +34,13 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
+} */
+
+.Content{
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+} 
 
 button {
   border-radius: 8px;
