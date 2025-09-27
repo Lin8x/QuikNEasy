@@ -55,8 +55,9 @@ body {
 
 .beginMeal{
   background-color: #FF5757;
+  height: 45px;
   color: black;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 0.6em 1.2em;
   border: none;
   font-size: 1em;
@@ -81,9 +82,22 @@ h1 {
 
 .Content{
   max-width: 600px;
-  margin: 40px auto;
+  margin: 90px 40px;
   padding: 20px;
 } 
+
+
+.Content.home{
+  max-width: 6020px;
+  margin: 40px 40px;
+  padding: 20px;
+}
+
+.home {
+  text-align: left;
+  margin-left: 40px;
+}
+
 
 button {
   border-radius: 8px;

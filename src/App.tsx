@@ -12,7 +12,7 @@ function App() {
 <div className="App">
   <Navbar />
   <div className="Content">
-      <Homepage />
+      <Homepage  />
       <div className="flex">
         <a href="salad.png" target="_blank">
           <img
