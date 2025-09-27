@@ -2,7 +2,6 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import enq_logo from "./assets/enq_logo.png";
-import "./App.css";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -10,7 +9,8 @@ function App() {
   const title = "QuikNEasy";
   return (
     <>
-      <Navbar />
+<div className="w-full min-h-screen flex flex-col">\
+  f
       <div>
         <a href="enq_logo.png" target="_blank">
           <img
@@ -37,6 +37,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      </div>
     </>
   );
 }
