@@ -6,6 +6,8 @@ import protein from "./assets/protein.png";
 import fat from "./assets/fat.png";
 import carbs from "./assets/carbs.png";
 import Navbar from "./components/Navbar";
+import Home from "./components/Homepage";
+import Homepage from "./components/Homepage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,17 +15,11 @@ function App() {
   return (
     <>
 <div className="App">
+  <Navbar />
   <div className="Content">
-      <Navbar />
+      <Homepage />
       <div>
-        <a href="enq_logo.png" target="_blank">
-          <img
-            src={enq_logo}
-            style={{ height: "100px" , width: "auto"  }}
-            className="logo"
-            alt="QuikNEasyLogo"
-          />
-        </a>
+        
         <a href="protein.png" target="_blank">
           <img
             src={protein}
