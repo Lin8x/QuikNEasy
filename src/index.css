@@ -33,7 +33,6 @@ body {
   display: flex;
   background-color: #252525;
   align-items: center;
-  width: 100vw;
   border-bottom: 2px solid black;
 }
 
@@ -52,6 +51,19 @@ body {
 
 .navbar-container {
   width: 100%;
+}
+
+.beginMeal{
+  background-color: #FF5757;
+  color: black;
+  border-radius: 20px;
+  padding: 0.6em 1.2em;
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.25s;
 }
 
 /* body {

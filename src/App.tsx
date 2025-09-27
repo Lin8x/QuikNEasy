@@ -1,11 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import enq_logo from "./assets/enq_logo.png";
 import salad from "./assets/salad.png";
 import Navbar from "./components/Navbar";
-import Home from "./components/Homepage";
 import Homepage from "./components/Homepage";
+import MakeMeal from "./components/MakeMeal";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -30,11 +27,7 @@ function App() {
         </a> */}
       </div>
       <h1>{title}</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Make a Meal Now!
-        </button>
-      </div>
+        <MakeMeal/>
       </div>
       </div>
     </>
