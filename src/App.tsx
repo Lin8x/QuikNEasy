@@ -4,7 +4,7 @@ import Homepage from "./components/Homepage";
 import HomepageGraphics from "./components/HomepageGraphics";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [] = useState(0);
   const title = "blah blah blah blah"; // lower text
   return (
     <>
