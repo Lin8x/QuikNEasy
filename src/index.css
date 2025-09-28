@@ -1,13 +1,13 @@
 .Row {
   display: flex;
-  align-items: center;
+  align-items: normal;
   justify-content: space-between;
   width: 90vw; /* Full viewport width */
 }
 
 .Left {
   flex: 1;
-  padding: 2rem;
+  padding: 0px;
 }
 
 .Right {
