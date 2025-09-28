@@ -121,7 +121,7 @@ body {
 
 .beginMeal {
   background-color: #ff5757;
-  height: 45px;
+  height: 40px;
   color: black;
   border-radius: 30px;
   padding: 0.6em 1.2em;
@@ -131,7 +131,7 @@ body {
   font-family: inherit;
   cursor: pointer;
   transition: background 0.25s;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 /* body {
