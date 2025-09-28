@@ -1,7 +1,7 @@
 import salad from "../assets/salad.png";
-import protein from "../assets/protein.png";
-import fat from "../assets/fat.png";
-import carbs from "../assets/carbs.png";
+// import protein from "../assets/protein.png";
+// import fat from "../assets/fat.png";
+// import carbs from "../assets/carbs.png";
 
 const HomepageGraphics = () => {
   return (
@@ -14,7 +14,7 @@ const HomepageGraphics = () => {
         alt="QuikNEasySalad"
       />
     </a>
-    <a href="protein.png" target="_blank">
+    {/* <a href="protein.png" target="_blank">
           <img
             src={protein}
             style={{ height: "40px" , width: "auto"  }}
@@ -37,7 +37,7 @@ const HomepageGraphics = () => {
             className="logo"
             alt="QuikNEasyCarbs"
           />
-        </a>
+        </a> */}
     </div>
   );
 };
