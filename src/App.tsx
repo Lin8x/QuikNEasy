@@ -7,7 +7,7 @@ import Planner from "./Planner";
 
 function App() {
   const [] = useState(0);
-  const title = "blah blah blah blah"; // lower text
+  const title = "Meals done quick"; // lower text
   return (
     <>
       {/* <Router> */}
