@@ -1,0 +1,70 @@
+.planner-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: white;
+}
+
+.navbar-placeholder {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Flex layout: inputs on the left, future content on the right */
+.planner-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* align to the left */
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+/* Column of stat boxes */
+.stat-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 350px; /* keeps them compact */
+}
+
+.stat-box {
+  background: #f9f9f9;
+  border: 3px solid black;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-box h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.stat-box input {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  width: 80%;
+  text-align: center;
+}
+
+/* Unique background colors */
+.calories-box {
+  background: #c9ddf7;
+}
+.protein-box {
+  background: #ffe0cc;
+}
+.fat-box {
+  background: #fddcdc;
+}
+.carbs-box {
+  background: #e6f9d8;
+}
