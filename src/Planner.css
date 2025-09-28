@@ -1,0 +1,117 @@
+/* Base container */
+.planner-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f0f4f8; /* soft light background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar-placeholder {
+  width: 100%;
+  background: #1e3a8a; /* deep blue */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Flex layout: inputs left, content right */
+.planner-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+/* Column of stat boxes */
+.stat-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 350px;
+}
+
+/* Individual stat boxes */
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+.stat-box h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+.stat-box input {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Input focus */
+.stat-box input:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 6px rgba(30, 58, 138, 0.4);
+}
+
+/* Box colors with subtle gradients */
+.calories-box {
+  background: linear-gradient(135deg, #c9ddf7, #a3c1f0);
+}
+.protein-box {
+  background: linear-gradient(135deg, #ffe0cc, #ffd2a6);
+}
+.fat-box {
+  background: linear-gradient(135deg, #fddcdc, #fbb6b6);
+}
+.carbs-box {
+  background: linear-gradient(135deg, #e6f9d8, #c9f2a6);
+}
+
+/* Right column placeholder */
+.right-side-placeholder {
+  display: flex;
+  flex-direction: column; /* stack content vertically */
+  justify-content: flex-start; /* align items to top */
+  align-items: center; /* center horizontally if needed */
+  flex: 1; /* take remaining horizontal space */
+  min-height: 500px; /* taller for vertical layout */
+  gap: 1.5rem; /* spacing between items inside */
+  border: 2px dashed #ccc;
+  border-radius: 16px;
+  padding: 1rem;
+  color: #888;
+  font-style: italic;
+  background: #fafafa;
+}

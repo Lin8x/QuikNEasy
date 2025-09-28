@@ -22,7 +22,7 @@ const Homepage = () => {
           marginTop: "8px",
         }}
       >
-        Blah blah blah
+        Meals done quick.
       </sub>
       <br />
       <MakeMeal />
