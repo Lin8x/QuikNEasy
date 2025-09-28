@@ -5,7 +5,7 @@ const HomepageGraphics = () => {
     <a href={salad} target="_blank">
       <img
         src={salad}
-        style={{ height: "400px", width: "auto" }}
+        style={{ height: "500px", width: "auto" }}
         className="logo"
         alt="QuikNEasySalad"
       />
