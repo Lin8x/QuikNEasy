@@ -8,7 +8,8 @@ const Homepage = () => {
           fontSize: "54px",
           fontWeight: "bold",
           color: "#252525",
-          marginBottom: "8px",
+          marginBottom: "0px",
+          marginTop: "0px",
         }}
       >
         Quik-N-Easy
