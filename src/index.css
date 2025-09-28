@@ -131,6 +131,7 @@ body {
   font-family: inherit;
   cursor: pointer;
   transition: background 0.25s;
+  margin-top: 20px;
 }
 
 /* body {
@@ -159,6 +160,11 @@ h1 {
 }
 
 .home {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.homeButtonContainer {
   text-align: left;
   margin-left: 40px;
 }

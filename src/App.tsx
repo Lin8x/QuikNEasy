@@ -17,8 +17,8 @@ function App() {
             {/* Left: Homepage content */}
             <div className="Left">
               <Homepage />
-              <MakeMeal />
             </div>
+
             {/* Right: Graphics */}
             <div className="right">
               <HomepageGraphics />
