@@ -3,25 +3,25 @@ import "./Planner.css";
 import Navbar from "./components/Navbar";
 
 const Planner: React.FC = () => {
-  const [calories, setCalories] = useState<number>(0);
-  const [protein, setProtein] = useState<number>(0);
-  const [fat, setFat] = useState<number>(0);
-  const [carbs, setCarbs] = useState<number>(0);
+  const [calories, setCalories] = useState<string>("0");
+  const [protein, setProtein] = useState<string>("0");
+  const [fat, setFat] = useState<string>("0");
+  const [carbs, setCarbs] = useState<string>("0");
+
+  const toNumber = (value: string) => (value === "" ? 0 : Number(value));
 
   return (
     <div className="planner-container">
-      {/* Navbar placeholder */}
       <Navbar />
 
       <div className="planner-content">
-        {/* Left column: stat inputs */}
         <div className="stat-column">
           <div className="stat-box calories-box">
             <h2>Calories 🍗</h2>
             <input
               type="number"
               value={calories}
-              onChange={(e) => setCalories(Number(e.target.value))}
+              onChange={(e) => setCalories(e.target.value)}
               placeholder="Enter calories"
             />
           </div>
@@ -31,7 +31,7 @@ const Planner: React.FC = () => {
             <input
               type="number"
               value={protein}
-              onChange={(e) => setProtein(Number(e.target.value))}
+              onChange={(e) => setProtein(e.target.value)}
               placeholder="Enter grams of protein"
             />
           </div>
@@ -41,7 +41,7 @@ const Planner: React.FC = () => {
             <input
               type="number"
               value={fat}
-              onChange={(e) => setFat(Number(e.target.value))}
+              onChange={(e) => setFat(e.target.value)}
               placeholder="Enter grams of fat"
             />
           </div>
@@ -51,16 +51,13 @@ const Planner: React.FC = () => {
             <input
               type="number"
               value={carbs}
-              onChange={(e) => setCarbs(Number(e.target.value))}
+              onChange={(e) => setCarbs(e.target.value)}
               placeholder="Enter grams of carbs"
             />
           </div>
         </div>
 
-        {/* Right column: leave empty for now */}
-        <div className="right-side-placeholder">
-          {/* We'll add your unique element here later */}
-        </div>
+        <div className="right-side-placeholder"></div>
       </div>
     </div>
   );
