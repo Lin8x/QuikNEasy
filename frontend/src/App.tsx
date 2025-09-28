@@ -29,7 +29,6 @@ function App() {
                 </Routes> */}
             </div>
           </div>
-          <h1>{title}</h1>
         </div>
       </div>
       {/* </Router> */}
