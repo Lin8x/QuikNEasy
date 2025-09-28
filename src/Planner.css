@@ -1,26 +1,31 @@
+/* Base container */
 .planner-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: white;
+  background: #f0f4f8; /* soft light background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Navbar */
 .navbar-placeholder {
   width: 100%;
-  background: black;
+  background: #1e3a8a; /* deep blue */
   color: white;
   padding: 1rem;
   text-align: center;
   font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Flex layout: inputs on the left, future content on the right */
+/* Flex layout: inputs left, content right */
 .planner-content {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start; /* align to the left */
+  justify-content: flex-start;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 2.5rem;
   margin-top: 2rem;
   padding: 0 2rem;
 }
@@ -29,42 +34,80 @@
 .stat-column {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  width: 350px; /* keeps them compact */
+  gap: 1.75rem;
+  width: 350px;
 }
 
+/* Individual stat boxes */
 .stat-box {
-  background: #f9f9f9;
-  border: 3px solid black;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1.5rem;
+  border-radius: 16px;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
 }
 
+/* Hover effect */
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
 .stat-box h2 {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
 }
 
+/* Inputs */
 .stat-box input {
-  padding: 0.75rem;
-  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
   border: 2px solid #ccc;
   font-size: 1rem;
-  width: 80%;
+  width: 100%;
+  max-width: 200px;
   text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* Unique background colors */
+/* Input focus */
+.stat-box input:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 6px rgba(30, 58, 138, 0.4);
+}
+
+/* Box colors with subtle gradients */
 .calories-box {
-  background: #c9ddf7;
+  background: linear-gradient(135deg, #c9ddf7, #a3c1f0);
 }
 .protein-box {
-  background: #ffe0cc;
+  background: linear-gradient(135deg, #ffe0cc, #ffd2a6);
 }
 .fat-box {
-  background: #fddcdc;
+  background: linear-gradient(135deg, #fddcdc, #fbb6b6);
 }
 .carbs-box {
-  background: #e6f9d8;
+  background: linear-gradient(135deg, #e6f9d8, #c9f2a6);
+}
+
+/* Right column placeholder */
+.right-side-placeholder {
+  flex: 1;
+  min-height: 250px;
+  border: 2px dashed #ccc;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-style: italic;
 }
