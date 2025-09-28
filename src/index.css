@@ -1,11 +1,49 @@
+.Row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw; /* Full viewport width */
+}
+
+.Left {
+  flex: 1;
+  padding: 2rem;
+}
+
+.Right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 12vw;
+  position: relative;
+  right: -8vw;
+}
+
+@media (min-width: 900px) {
+  .Right {
+    max-width: 600px;
+    padding-right: 16vw;
+    right: -12vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .Right {
+    max-width: 600px;
+    padding-right: 23vw;
+    right: -29vw;
+  }
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #ffffffde;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,7 +52,7 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: 00;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -23,6 +61,80 @@ a:hover {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  background-color: #252525;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-left: 16px;
+  padding: 6px;
+}
+
+.navbar-container {
+  width: 100%;
+}
+
+.homepage-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.homepage-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.homepage-header p {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.main-btn {
+  background-color: #f26d63;
+  color: #222;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8em 2em;
+  cursor: pointer;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.beginMeal {
+  background-color: #ff5757;
+  height: 45px;
+  color: black;
+  border-radius: 30px;
+  padding: 0.6em 1.2em;
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.25s;
+  margin-top: 20px;
+}
+
+/* body {
   margin: 0;
   display: flex;
   place-items: center;
@@ -33,6 +145,28 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+} */
+
+.Content {
+  max-width: 600px;
+  margin: 90px 40px;
+  padding: 20px;
+}
+
+.Content.home {
+  max-width: 6020px;
+  margin: 40px 40px;
+  padding: 20px;
+}
+
+.home {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.homeButtonContainer {
+  text-align: left;
+  margin-left: 40px;
 }
 
 button {
