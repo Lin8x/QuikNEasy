@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Planner.css";
 import Navbar from "./components/Navbar";
+import NutritionLabel from "./components/NutritionLabel"; // You'll need to create this file
 
 const Planner: React.FC = () => {
   const [calories, setCalories] = useState<string>("0");
@@ -23,6 +24,7 @@ const Planner: React.FC = () => {
               value={calories}
               onChange={(e) => setCalories(e.target.value)}
               placeholder="Enter calories"
+              min="0"
             />
           </div>
 
@@ -33,6 +35,7 @@ const Planner: React.FC = () => {
               value={protein}
               onChange={(e) => setProtein(e.target.value)}
               placeholder="Enter grams of protein"
+              min="0"
             />
           </div>
 
@@ -43,6 +46,7 @@ const Planner: React.FC = () => {
               value={fat}
               onChange={(e) => setFat(e.target.value)}
               placeholder="Enter grams of fat"
+              min="0"
             />
           </div>
 
@@ -53,11 +57,19 @@ const Planner: React.FC = () => {
               value={carbs}
               onChange={(e) => setCarbs(e.target.value)}
               placeholder="Enter grams of carbs"
+              min="0"
             />
           </div>
         </div>
 
-        <div className="right-side-placeholder"></div>
+        <div className="nutrition-label-container">
+          <NutritionLabel
+            calories={calories}
+            protein={protein}
+            fat={fat}
+            carbs={carbs}
+          />
+        </div>
       </div>
     </div>
   );

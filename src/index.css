@@ -200,3 +200,94 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.planner-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.planner-content {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stat-box {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.stat-box h2 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.stat-box input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.stat-box input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.calories-box {
+  border-left: 4px solid #ff6b35;
+}
+
+.protein-box {
+  border-left: 4px solid #4caf50;
+}
+
+.fat-box {
+  border-left: 4px solid #ffeb3b;
+}
+
+.carbs-box {
+  border-left: 4px solid #2196f3;
+}
+
+.nutrition-label-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .planner-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nutrition-label-container {
+    justify-content: center;
+    padding-top: 1rem;
+  }
+}
