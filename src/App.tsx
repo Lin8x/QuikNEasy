@@ -1,15 +1,16 @@
 import { useState } from "react";
-import salad from "./assets/salad.png";
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
-import MakeMeal from "./components/MakeMeal";
 import HomepageGraphics from "./components/HomepageGraphics";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Planner from "./Planner";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [] = useState(0);
   const title = "blah blah blah blah"; // lower text
   return (
     <>
+      {/* <Router> */}
       <div className="App">
         <Navbar />
         <div className="Content">
@@ -22,11 +23,16 @@ function App() {
             {/* Right: Graphics */}
             <div className="right">
               <HomepageGraphics />
+              {/* <Routes>
+                  <Route path="/" element={<App />} />
+                  <Route path="/planner" element={<Planner />} />
+                </Routes> */}
             </div>
           </div>
           <h1>{title}</h1>
         </div>
       </div>
+      {/* </Router> */}
     </>
   );
 }

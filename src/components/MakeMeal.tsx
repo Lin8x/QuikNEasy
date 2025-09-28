@@ -1,11 +1,13 @@
 const MakeMeal = () => {
-    return ( 
+  const HandleClick = () => {
+    console.log("hello jdjdj");
+  };
 
-        <button className="beginMeal" onClick={() => alert('Meal is being made!')}>
-          Make a Meal Now!
-        </button>
+  return (
+    <button className="beginMeal" onClick={HandleClick}>
+      Make a Meal Now!
+    </button>
+  );
+};
 
-     );
-}
- 
 export default MakeMeal;
