@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Planner.css";
+import Navbar from "./components/Navbar";
 
 const Planner: React.FC = () => {
   const [calories, setCalories] = useState<number>(0);
@@ -10,7 +11,7 @@ const Planner: React.FC = () => {
   return (
     <div className="planner-container">
       {/* Navbar placeholder */}
-      <div className="navbar-placeholder">Navbar goes here</div>
+      <Navbar />
 
       <div className="planner-content">
         {/* Left column: stat inputs */}

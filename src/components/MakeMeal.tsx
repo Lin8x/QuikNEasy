@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 const MakeMeal = () => {
+  const navigate = useNavigate();
+
   const HandleClick = () => {
-    console.log("hello jdjdj");
+    navigate("/planner"); // 👈 send user to Planner page
   };
 
   return (
