@@ -1,8 +1,6 @@
 import { useState } from "react";
-import salad from "./assets/salad.png";
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
-import MakeMeal from "./components/MakeMeal";
 import HomepageGraphics from "./components/HomepageGraphics";
 
 function App() {
