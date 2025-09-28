@@ -13,18 +13,18 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="Content">
-          <div className="flex items-center min-h-screen">
+          <div className="Row">
             {/* Left: Homepage content */}
-            <div className="flex-1">
+            <div className="Left">
               <Homepage />
+              <MakeMeal />
             </div>
             {/* Right: Graphics */}
-            <div className="flex-1 flex justify-end">
+            <div className="right">
               <HomepageGraphics />
             </div>
           </div>
           <h1>{title}</h1>
-          <MakeMeal />
         </div>
       </div>
     </>
