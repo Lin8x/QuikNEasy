@@ -13,12 +13,15 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="Content">
-          <Homepage />
-          <div className="flex">
-            <HomepageGraphics />
-            {/* <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
+          <div className="flex items-center min-h-screen">
+            {/* Left: Homepage content */}
+            <div className="flex-1">
+              <Homepage />
+            </div>
+            {/* Right: Graphics */}
+            <div className="flex-1 flex justify-end">
+              <HomepageGraphics />
+            </div>
           </div>
           <h1>{title}</h1>
           <MakeMeal />

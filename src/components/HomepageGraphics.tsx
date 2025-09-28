@@ -1,4 +1,4 @@
-import salad from "../path/to/salad.png";
+import salad from "../assets/salad.png";
 
 const HomepageGraphics = () => {
   return (
